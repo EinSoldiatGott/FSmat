@@ -1,0 +1,10 @@
+clc;
+close all;
+
+%[BT,endian]=conectaIMU();
+
+for i=1:100
+[xHMX,yHMC,zHMC]=leeHMCxyz(BT,endian);
+
+
+% fclose(BT);
