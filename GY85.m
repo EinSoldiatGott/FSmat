@@ -11,15 +11,21 @@ minHMC=int16 ([0,0,0]);
 
 maxADX=int16 ([0,0,0]);
 minADX=int16 ([0,0,0]);
-for i=1:1000
+
+maxITG=int16 ([0,0,0]);
+minITG=int16 ([0,0,0]);
+
+for i=1:100
     i
     subplot(1,3,1)
     [maxHMC,minHMC]=plotHMCxyz(BT,endian,maxHMC,minHMC);
-    xlabel('Orientación');
-    
+      
     subplot(1,3,2)
     [maxADX,minADX]=plotADXxyz(BT,endian,maxADX,minADX);
-    xlabel('Aceleración');
+
+    subplot(1,3,3)
+    [maxITG,minITG]=plotITGxyz(BT,endian,maxITG,minITG);
+
     pause(.05);
 end
 

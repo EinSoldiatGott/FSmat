@@ -8,5 +8,6 @@ function [maxHMC,minHMC] = plotHMCxyz(BT,endian,maxHMC,minHMC)
     bar(minHMC,'g'); hold on;
     bar(xyzHMC,'b'); hold off;  
     set(gca,'XTickLabel',{'x','y','z'})
+    xlabel('Orientación');
 end
 

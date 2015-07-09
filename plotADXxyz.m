@@ -9,5 +9,6 @@ function [maxADX,minADX] = plotADXxyz(BT,endian,maxADX,minADX)
     bar(minADX,'g'); hold on;
     bar(xyzADX,'b'); hold off;  
     set(gca,'XTickLabel',{'x','y','z'})
+    xlabel('Aceleración');
 end
 
