@@ -11,7 +11,7 @@ minHMC=int16 ([0,0,0]);
 
 maxADX=int16 ([0,0,0]);
 minADX=int16 ([0,0,0]);
-for i=1:100
+for i=1:1000
     i
     subplot(1,3,1)
     [maxHMC,minHMC]=plotHMCxyz(BT,endian,maxHMC,minHMC);
